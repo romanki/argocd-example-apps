@@ -18,3 +18,7 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
+  volumes:
+      - name: my-pvc
+        persistentVolumeClaim:
+          claimName: my-pvc
