@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: gold
+  storageClassName: tanzu-k8s-tagged-dus
   resources:
     requests:
         storage: 3Gi
