@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-pvc-rwm
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: tanzu-k8s-tagged-dus
+  resources:
+    requests:
+        storage: 3Gi
