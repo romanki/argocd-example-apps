@@ -19,9 +19,9 @@ spec:
         ports:
         - containerPort: 80
         volumeMounts:
-        - name: my-pvc
+        - name: my-pvc2
           mountPath: /var/data
       volumes:
-      - name: my-pvc
+      - name: my-pvc2
         persistentVolumeClaim:
-          claimName: my-pvc
+          claimName: my-pvc2
