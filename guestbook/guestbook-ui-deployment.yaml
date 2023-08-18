@@ -22,6 +22,6 @@ spec:
         - name: my-pvc2
           mountPath: /var/data
       volumes:
-      - name: my-pvc2
+      - name: mypvc
         persistentVolumeClaim:
-          claimName: my-pvc2
+          claimName: mypvc
