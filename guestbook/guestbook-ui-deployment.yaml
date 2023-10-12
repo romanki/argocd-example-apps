@@ -19,9 +19,9 @@ spec:
         ports:
         - containerPort: 80
         volumeMounts:
-        - name: mypvc
+        - name: mypvc-rwx
           mountPath: /var/data
       volumes:
-      - name: mypvc
+      - name: mypvc-rwx
         persistentVolumeClaim:
-          claimName: mypvc
+          claimName: mypvc-rwx
